@@ -1,0 +1,21 @@
+
+python3 detect_faces.py --image images/rooster.jpg 
+--prototxt model/deploy.prototxt.txt --model model/res10_300x300_ssd_iter_140000.caffemodel
+
+python3 detect_faces.py --image images/iron_chic.jpg 
+--prototxt model/deploy.prototxt.txt --model model/res10_300x300_ssd_iter_140000.caffemodel 
+
+python3 detect_faces2.py --image images/rooster.jpg
+--prototxt model/opencv_face_detector.pbtxt --model model/opencv_face_detector_uint8.pb 
+
+python3 detect_faces2.py --image images/iron_chic.jpg
+--prototxt model/opencv_face_detector.pbtxt --model model/opencv_face_detector_uint8.pb 
+
+
+Reference:
+https://www.pyimagesearch.com/2018/02/26/face-detection-with-opencv-and-deep-learning/
+
+https://www.learnopencv.com/face-detection-opencv-dlib-and-deep-learning-c-python/
+
+
+opencv dnn wiki
