@@ -1,0 +1,17 @@
+
+1) Encoding the faces using OpenCV and deep learning
+   python3 encode_faces.py --dataset dataset --encodings encodings.pickle
+   
+2) Recognizing faces in images
+   python3 recognize_faces_image.py --encodings encodings.pickle \
+	--image examples/example_01.png
+
+3) python3 pi_face_recognition.py -c haarcascade_frontalface_default.xml -e encodings.pickle
+
+
+# Fix Segmentation Fault on RPi
+export OPENBLAS_NUM_THREADS=1
+export OPENBLAS_MAIN_FREE=1
+
+Reference:
+https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/
